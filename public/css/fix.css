@@ -1,0 +1,137 @@
+body {
+  width: 100%;
+}
+
+.body-wrap {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.asterisk {
+  color: red;
+}
+
+.example {
+  color: gray;
+  text-align: left;
+  margin: 0 auto 0 27%;
+}
+
+.input {
+  margin: 8px 10% 0 auto;
+  width: 65%;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.family-name {
+  height: 24px;
+  width: 30%;
+  margin: 8px 0 0 auto;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.child-name {
+  height: 24px;
+  width: 30%;
+  margin: 8px 10% 0 5%;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.name {
+  margin: 0 31% 0 auto;
+}
+
+.radio-btns{
+  width: 65%;
+}
+input[type=radio] {
+    display: none;
+}
+.radio-label {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px;
+    position: relative;
+    width: auto;
+}
+.radio-label::before {
+    background: #fff;
+    border: 1px solid #231815;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: -2px;
+    margin-top: -8px;
+    position: absolute;
+    top: 25%;
+}
+.radio-label::after {
+    background:  black;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 9px;
+    margin-top: -4px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+}
+input[type=radio]:checked + .radio-label::after {
+    opacity: 1;
+}
+
+.post-mark {
+  font-size: 16px;
+  margin: 12px 0 0 auto;
+}
+
+.postcode {
+  width: 60%;
+  height: 24px;
+  margin: 8px 10% 0 8px;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.post-example {
+  text-align: left;
+  color: gray;
+  margin: 0 auto 0 33%;
+}
+
+.textarea {
+  margin: 8px 10% 0 auto;
+  width: 65%;
+  border-radius: 8px;
+  border: 1px solid gray;
+}
+
+.submit {
+  cursor: pointer;
+  margin-top: 24px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border: 1px solid black;
+  width: 120px;
+  height: 40px;
+  font-size: 16px;
+}

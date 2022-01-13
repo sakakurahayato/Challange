@@ -1,0 +1,145 @@
+.radio-btns{
+width: 30%;
+}
+input[type=radio] {
+    display: none;
+}
+.radio-label {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px;
+    position: relative;
+    width: auto;
+}
+.radio-label::before {
+    background: #fff;
+    border: 1px solid #231815;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    left: -2px;
+    margin-top: -8px;
+    position: absolute;
+    top: 25%;
+}
+.radio-label::after {
+    background:  black;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 10px;
+    left: 9px;
+    margin-top: -4px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    width: 10px;
+}
+input[type=radio]:checked + .radio-label::after {
+    opacity: 1;
+}
+
+.wrap{
+    width: 90%;
+    margin: auto;
+}
+.management{
+    text-align: center;
+}
+.input-wrap{
+    border: 1px solid black;
+    padding: 24px;
+}
+.flex{
+    display: flex;
+}
+.title{
+    width: 180px;
+    font-size: 16px;
+    align-items: center;
+}
+.input{
+    width: 30%;
+    height: 30px;
+    margin: 8px 16px auto 0;
+}
+.gender-title{
+    font-size: 16px;
+    width: 120px;
+}
+.date-span{
+    margin-top:14px;
+    margin-right: 16px;
+}
+.submit{
+display: block;
+cursor: pointer;
+margin-top: 24px;
+background-color: black;
+color: white;
+border-radius: 8px;
+border: 1px solid black;
+width: 120px;
+height: 40px;
+font-size: 16px;
+margin: 16px auto;
+}
+.link{
+display: block;
+width: 80px;
+margin: 0 auto;
+}
+.table{
+border-collapse:collapse;
+}
+.table-first-tr{
+border-bottom: 2px solid black;
+}
+.table-id{
+    width: 48px;
+    padding: 8px 24px 8px 16px;
+    text-align: center;
+}
+.table-name{
+    text-align: left;
+    width: 120px;
+    padding: 8px 24px 8px 16px;
+}
+.table-gender{
+    text-align: left;
+    width: 48px;
+    padding: 8px 24px 8px 16px;
+}
+.table-email {
+    width: 240px;
+    padding: 8px 24px 8px 16px;
+    text-align: left;
+}
+
+.table-opinion{
+    width: 400px;
+    height: 16px;
+    padding: 16px 24px 16px 16px;
+    text-align: left;
+    overflow: hidden;
+}
+.table-opinion:hover{
+    overflow: visible;
+}
+.table-opinion.overflow::after{
+    content: "...";
+    height: auto;
+}
+
+.table-delete{
+    padding: 8px 300px 8px 16px;
+}
+.delete{
+    background-color: black;
+    color: white;
+    width: 60px;
+    border-radius: 8px;
+}
